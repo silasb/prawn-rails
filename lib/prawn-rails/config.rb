@@ -1,7 +1,7 @@
 require 'ostruct'
 
 module PrawnRails
-extend self
+  extend self
 
   @config = OpenStruct.new
 
@@ -12,9 +12,5 @@ extend self
       puts e
       puts e.backtrace
     end
-
   end
-
 end
-
-
