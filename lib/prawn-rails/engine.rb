@@ -2,7 +2,7 @@ require "prawn-rails/prawn_renderer"
 
 module PrawnRails
   class Engine < Rails::Engine
-    ActionController::Renderers.add :pdf do |pdf, options|
+    ActionController::Renderers.add :prawn do |pdf, options|
       filename = options.delete :filename
       template = options.delete :template
 
